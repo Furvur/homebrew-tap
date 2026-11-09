@@ -1,22 +1,23 @@
 class Router < Formula
   desc "Local HTTPS URLs for dev servers: https://myapp.test -> localhost:5173"
   homepage "https://github.com/Furvur/router-releases"
-  version "0.1.0"
+  version "0.1.1"
   license :cannot_represent
 
   depends_on :macos
 
   on_arm do
-    url "https://github.com/Furvur/router-releases/releases/download/v0.1.0/router_0.1.0_darwin_arm64.tar.gz"
-    sha256 "89cb07fc503877a58a02cfa44b8cd3191eecd76c0f319ab8e809f8ab46554b55"
+    url "https://github.com/Furvur/router-releases/releases/download/v0.1.1/router_0.1.1_darwin_arm64.tar.gz"
+    sha256 "7d62643406e05c9b3519b9e11077ddef7278a14dada1c35673332e8fadfd7944"
   end
   on_intel do
-    url "https://github.com/Furvur/router-releases/releases/download/v0.1.0/router_0.1.0_darwin_amd64.tar.gz"
-    sha256 "93ad87d81b0aeaff8b5eaa2b4e0c2fa7be8d9010e85d3fc6f2b699b0414a082c"
+    url "https://github.com/Furvur/router-releases/releases/download/v0.1.1/router_0.1.1_darwin_amd64.tar.gz"
+    sha256 "c9e40c87ab02ace0c86086ec5ef137c4f51b347e84d5a7cd98df12c851ae6e3f"
   end
 
   def install
     bin.install "router"
+    prefix.install "LICENSE", "THIRD_PARTY_NOTICES"
   end
 
   def caveats
