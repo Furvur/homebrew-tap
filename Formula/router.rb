@@ -1,18 +1,18 @@
 class Router < Formula
   desc "Local HTTPS URLs for dev servers: https://myapp.test -> localhost:5173"
   homepage "https://github.com/Furvur/router-releases"
-  version "0.1.1"
+  version "0.2.0"
   license :cannot_represent
 
   depends_on :macos
 
   on_arm do
-    url "https://github.com/Furvur/router-releases/releases/download/v0.1.1/router_0.1.1_darwin_arm64.tar.gz"
-    sha256 "7d62643406e05c9b3519b9e11077ddef7278a14dada1c35673332e8fadfd7944"
+    url "https://github.com/Furvur/router-releases/releases/download/v0.2.0/router_0.2.0_darwin_arm64.tar.gz"
+    sha256 "4a0302e2353494d51364bd780375f72c33ea49aeeadc535396032dd6c98d8fb9"
   end
   on_intel do
-    url "https://github.com/Furvur/router-releases/releases/download/v0.1.1/router_0.1.1_darwin_amd64.tar.gz"
-    sha256 "c9e40c87ab02ace0c86086ec5ef137c4f51b347e84d5a7cd98df12c851ae6e3f"
+    url "https://github.com/Furvur/router-releases/releases/download/v0.2.0/router_0.2.0_darwin_amd64.tar.gz"
+    sha256 "3021e047e09db9b9f0108f69693cd7d839d1fa9d1107f5b647036e900630c312"
   end
 
   def install
